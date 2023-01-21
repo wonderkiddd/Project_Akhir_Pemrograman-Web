@@ -1,0 +1,101 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+   width: 100vw;
+   height: 100vh;
+   background-size: 100%;
+   background-image: url("../image/bgindex.jpg");
+}
+
+
+.header {
+	color: black;
+	background-color: white;
+	font-family: sans-serif;
+	margin: 0;
+   padding-top: 20px;
+   padding-right: 20px;
+   padding-bottom: 20px;
+   padding-left: 40px;
+}
+
+.header img{
+   width: 100px;
+}
+
+.mainkiri{
+   padding: 100px;
+}
+
+.mainkiri h1{
+   font-size: 50px;
+   color: white;
+   font-family: 'Roboto', sans-serif;
+   font-weight: 900;
+   text-shadow: 2px 2px 5px black;
+}
+
+.mainkiri label{
+   font-family: 'Roboto', sans-serif;
+   font-weight: 300;
+   text-shadow: 2px 2px 5px black;
+   color: white;
+}
+
+.mainkiri button{
+   border: 0;
+   background: white;
+   text-align: center;
+   padding: 10px 30px;
+   outline: none;
+   color: black;
+   border-radius: 10px;
+   transition: 0.25s;
+   cursor: pointer;
+   margin-top: 20px;
+}
+
+button a{
+   text-decoration: none;
+   color: black;
+}
+
+button a:hover{
+   text-decoration: none;
+   color: white;
+}
+
+.mainkiri button:hover{
+   background: #cc3333;
+   color: white;
+}
+
+.mainkiri label{
+   font-family: sans-serif;
+   font-size: 17px;
+}
+
+.wholepage{
+   display: flex;
+}
+
+.mainkanan img{
+   width: 900px;
+   padding-left: 350px;
+   padding-top: 80px;
+   padding-bottom: 70px;
+   padding-right: 60px;
+}
+
+.mainkanan{
+}
+
+.mainkiri {
+   padding-right: 30px;
+   color: black;
+}
+

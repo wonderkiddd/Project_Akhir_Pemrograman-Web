@@ -1,0 +1,375 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header img{
+  width: 100px;
+}
+
+.header{
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header button{
+  border: none;
+  outline: none;
+  background-color: #cc3333;
+  width: 80px;
+  height: 30px;
+  border-radius: 5px;
+}
+
+.header button:hover{
+  transform: scale(1.1,1.1);
+}
+
+.header button:active{
+  transform: unset;
+}
+
+.header button a{
+  text-decoration: none;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+}
+
+.header-btn i{
+  color: white;
+  font-size: 24px;
+}
+
+.header-btn .cart{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 20px;
+  position: relative;
+}
+
+.header-btn span{
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  bottom: 0;
+  left: -5px;
+  font-size: 15px;
+  background-color: white;
+  color: #cc3333;
+  border-radius: 50%;
+  padding-top: 1px;
+  box-shadow: 1px 1px 3px 0 black;
+}
+
+.preview{
+  background-color: white;
+}
+
+
+.section {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.slider {
+  width: 800px;
+  height: 500px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.slide {
+  width: 500%;
+  height: 500px;
+  display: flex;
+}
+.slide input {
+  display: none;
+}
+.st {
+  width: 20%;
+  transition: 2s;
+}
+.st img {
+  width: 800px;
+  height: 500px;
+}
+.nav-m {
+  position: absolute;
+  width: 800px;
+  margin-top: -40px;
+  justify-content: center;
+  display: flex;
+}
+.m-btn {
+  border: 2px solid white;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+.m-btn:not(:last-child) {
+  margin-right: 30px;
+}
+.m-btn:hover {
+  background-color: white;
+}
+#radio1:checked ~ .first {
+  margin-left: 0;
+}
+#radio2:checked ~ .first {
+  margin-left: -20%;
+}
+#radio3:checked ~ .first {
+  margin-left: -40%;
+}
+#radio4:checked ~ .first {
+  margin-left: -60%;
+}
+
+.nav-auto {
+  position: absolute;
+  width: 800px;
+  margin-top: 460px;
+  display: flex;
+  justify-content: center;
+}
+.nav-auto div {
+  border: 2px solid white;
+  padding: 5px;
+  border-radius: 10px;
+  transition: 1s;
+}
+.nav-auto div:not(:last-child) {
+  margin-right: 30px;
+  justify-content: center;
+}
+
+#radio1:checked ~ .nav-auto .a-b1 {
+  background-color: white;
+}
+#radio2:checked ~ .nav-auto .a-b2 {
+  background-color: white;
+}
+#radio3:checked ~ .nav-auto .a-b3 {
+  background-color: white;
+}
+#radio4:checked ~ .nav-auto .a-b4 {
+  background-color: white;
+}
+
+.header{
+  padding: 20px;
+  padding-left: 20px;
+}
+
+.footer{
+  font-family: sans-serif;
+  padding-top: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 50px;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.foodtitle{
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  font-family: sans-serif;
+  justify-content: center;
+  background-color: #cc3333;
+  margin-bottom: 20px;
+  color: white;
+  align-items: center;
+  border-radius: 10px;
+  padding-top: 2px;
+  align-content: center;
+}
+
+.foodtitle label{
+  text-align: center;
+  justify-content: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 40px;
+  font-weight: bold; 
+}
+
+.drinktitle{
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  font-family: sans-serif;
+  justify-content: center;
+  background-color: #cc3333;
+  margin-bottom: 20px;
+  color: white;
+  align-items: center;
+  border-radius: 10px;
+  padding-top: 2px;
+}
+
+.drinktitle label{
+  text-align: center;
+  justify-content: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.container{
+  width: 1300px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+  margin: 0 auto;
+  border-radius: 12px;
+  background-size: 100%;
+}
+
+.card{
+  width: 380px;
+  height: 150px;
+  background-color: white;
+  padding-right: 16px;
+  box-shadow: 3px 3px 5px 0px black;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  margin: 0 20px;
+  margin: 20px;
+
+}
+
+.card .card-img{
+  width: 150px;
+  height: 150px;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-right: 8px;
+}
+
+.card .card-img img{
+  width: 100%;
+  height: 100%;
+}
+
+.card .card-detail{
+  margin-right: 8px;
+  font-family: 'Roboto', sans-serif;
+  margin-left: 10px;
+}
+
+.card-detail .names{
+  margin-bottom: 8px;
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+  text-align: left;
+}
+
+.card-detail .prices{
+  font-size: 1.18rem;
+  font-weight: bold;
+  color: black;
+  font-family: 'Roboto', sans-serif;
+  text-align: left;
+}
+
+.card-detail .prices sup{
+  font-size: .64rem;
+  color: black;
+  font-family: 'Roboto', sans-serif;
+}
+
+.card .card-action{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-action .btn{
+  font-size: .64rem;
+  font-weight: bold;
+  background-color: lightgray;
+  border: none;
+  outline: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.card-action .btn:hover{
+  transform: scale(1.1,1.1);
+}
+
+.card-action .btn:active{
+  transform: unset;
+}
+
+.card-action .counter{
+  width: 30px;
+  text-align: center;
+  padding: 8px;
+  outline: none;
+  border: none;
+  font-weight: bold;
+  background-color: unset;
+  font-size: .8rem;
+  color: orange;
+}
+
+.previewkanan{
+  width: 500px;
+  height: 500px;
+  padding-top: 130px;
+  padding-left: 50px;
+  background-color: #cc3333;
+  border-radius: 10px;
+  margin-left: 50px;
+  padding-bottom: 50px;
+  padding-right: 90px;
+  background-image: url("../image/pattern.png");
+  background-size: 100%;
+}
+.previewkanan img{
+  width: 400px;
+  margin: 0 auto;
+}
+
+.orderbtn{
+  margin: 0;
+}
+.card-detail .orderbtn button{
+  margin-top: 25px;
+  padding: 5px;
+  border-radius: 5px;
+  font-family: 'Roboto', sans-serif;
+  border: none;
+  background-color: #cc3333;
+  color: white;
+  width: 140px;
+  height: 30px;
+  font-size: 15px;
+  justify-content: left;
+}
+
+.card-detail .orderbtn button:hover{
+  transform: scale(1.1,1.1);
+}
+
+.card-detail .orderbtn button:active{
+  transform: unset;
+}
+
+
+
+
